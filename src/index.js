@@ -86,6 +86,7 @@ function onFetchError() {
     'Oops! Something went wrong! Try reloading the page or make another choice!',
     { timeout: 4000 }
   );
+  refs.LoadMoreBtn.classList.add('is-hidden');
 }
 // lightbox
 
