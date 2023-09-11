@@ -29,7 +29,7 @@ async function fetchPhotoAsync(keyPhoto, page, perPage) {
 async function onSubmitSearch(event) {
   try {
     event.preventDefault();
-
+    refs.LoadMoreBtn.classList.add('is-hidden');
     refs.gallery.innerHTML = '';
     page = 1;
     const { searchQuery } = event.currentTarget.elements;
